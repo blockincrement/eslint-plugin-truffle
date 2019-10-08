@@ -1,10 +1,17 @@
 # eslint-plugin-truffle
+ESLint plugin for Truffle development. 
 
-ESLint plugin for Truffle development. It provides a custom environment containing Truffle global variables.
+Provides a custom environment containing Truffle global variables.
+
+## Installation
+
+```
+yarn add --dev eslint eslint-plugin-truffle
+```
 
 ## Usage
 
-In your `.eslintrc` file, add:
+In your ESLint config file (ex.: `.eslintrc`), add:
 
 ```javascript
 {
@@ -12,7 +19,7 @@ In your `.eslintrc` file, add:
   "env": {
     // ...
     "mocha": true, // for test files
-    "truffle/truffle": true
+    "truffle/globals": true // same as "truffle/truffle": true
   },
   "plugins": [
     // ...
